@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <!-- HTML Forms Guide -->
+    <!-- The HTML form is used to collect the user input and that input is mostly sent to a server processing. -->
+    <!-- Input element can be displayed in many ways depending on the type attribute -->
+    <!-- Label element is useful for the screen readers, the for attribute in the label element should be equal to the id attribute in the input element to bind them together -->
+    <!-- The action attribute defines to be performed when the form is submitted. If the action attribute is omitted the action is set to the current page -->
+
+    <form action="https://www.google.com/search" target="_blank">
+      <label for="google-search">Google Search</label>
+      <input type="text" name="q" id="google-search" />
+      <button>Search</button>
+    </form>
+    <form action="https://www.youtube.com/results" target="_blank">
+      <label for="youtube-search">Youtube Search</label>
+      <input type="text" name="search_query" id="youtube-search" />
+      <button>Search</button>
+    </form>
+  </body>
+</html>
