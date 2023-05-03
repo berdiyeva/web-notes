@@ -23,5 +23,48 @@
       <input type="text" name="search_query" id="youtube-search" />
       <button>Search</button>
     </form>
+
+    <h2>Race Registration!</h2>
+    <form action="/dummy">
+      <div>
+        <label for="first_name">First Name</label>
+        <input id="first_name" type="text" required />
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" required />
+      </div>
+
+      <fieldset>
+        <legend>Select a Race</legend>
+        <div>
+          <input type="radio" name="race" id="fun-run" value="5k" />
+          <label for="fun-run">Fun Run 5K</label>
+        </div>
+        <div>
+          <input type="radio" name="race" id="half" value="half" />
+          <label for="half">Half Marathon</label>
+        </div>
+        <div>
+          <input type="radio" name="race" id="full" value="full" />
+          <label for="full">Full Marathon</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div>
+        <label for="age">Select Age Group</label>
+        <select name="age-group" id="age">
+          <option value="under18">under 18</option>
+          <option value="18-30">18-30</option>
+          <option value="30-50">30-50</option>
+        </select>
+      </div>
+      <button>Register</button>
+    </form>
   </body>
 </html>
