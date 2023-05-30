@@ -60,32 +60,85 @@
 // }
 
 //the simple guessing game 
-let maximum = parseInt(prompt("Enter the maximum number!"));
-while (!maximum) {
-    maximum = parseInt(prompt("Enter a valid number!"));
-}
+// let maximum = parseInt(prompt("Enter the maximum number!"));
+// while (!maximum) {
+//     maximum = parseInt(prompt("Enter a valid number!"));
+// }
 
-const randomNum = Math.floor(Math.random() * maximum) + 1;
-console.log(randomNum);
+// const randomNum = Math.floor(Math.random() * maximum) + 1;
+// console.log(randomNum);
 
-let guess = prompt("Enter your first guess!");
-let attempts = 1;
+// let guess = prompt("Enter your first guess!");
+// let attempts = 1;
 
-while (parseInt(guess) !== randomNum) {
-    if (guess === 'q') break;
-    guess = parseInt(guess);
-    if (guess > randomNum) {
-        guess = prompt("Too high! Enter a new guess!");
-        attempts++;
-    } else if (guess < randomNum) {
-        guess = prompt("Too low! Enter a new guess!");
-        attempts++;
-    } else {
-        guess = prompt("Invalid guess. Please enter a number or 'q' to quit the game.")
-    }
-}
-if (guess === 'q') {
-    console.log("Ok, bye!")
-} else {
-    console.log(`Congrats! You win! It took you ${attempts} guesses`)
-}
+// while (parseInt(guess) !== randomNum) {
+//     if (guess === 'q') break;
+//     guess = parseInt(guess);
+//     if (guess > randomNum) {
+//         guess = prompt("Too high! Enter a new guess!");
+//         attempts++;
+//     } else if (guess < randomNum) {
+//         guess = prompt("Too low! Enter a new guess!");
+//         attempts++;
+//     } else {
+//         guess = prompt("Invalid guess. Please enter a number or 'q' to quit the game.")
+//     }
+// }
+// if (guess === 'q') {
+//     console.log("Ok, bye!")
+// } else {
+//     console.log(`Congrats! You win! It took you ${attempts} guesses`)
+// }
+
+// FOR OF
+
+// const subreddits = ['cringe', 'books', 'chickens', 'funny']
+
+// for (let i = 0; i < subreddits.length; i++) {
+//     console.log(`Visit reddit.com/r/${subreddits[i]}`);
+// }
+
+// for (sub of subreddits) {
+//     console.log(`Visit reddit.com/r/${sub}`);
+// }
+
+// let seatingChart = [['Kristen', 'Erik', 'Namita'], ['Kevin', 'Joe', 'Jane', 'Olivia'], ['Yuma', 'Sakura', 'Jack', 'Steven']]
+// for (let i = 0; i < seatingChart.length; i++) {
+//     let row = seatingChart[i];
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(row[j]);
+//     }
+// }
+
+// for (let row of seatingChart) {
+//     for (let student of row) {
+//         console.log(student);
+//     }
+// }
+
+// for (let char of 'Hello World!') {
+//     console.log(char);
+// }
+
+// FOR IN
+
+// const testScores = {
+//     ken: 80,
+//     dani: 90,
+//     kim: 70,
+//     mary:90
+// }
+
+// for (let s in testScores) {
+//     console.log(`${s} scored ${testScores[s]}`);
+// }
+
+// // Object.keys(testScores), Object.values(testScores), Object.entries(testScores)
+
+// let total = 0;
+// let scores = Object.values(testScores);
+// for (let score of scores) {
+//     total += score;
+// }
+// console.log(`Total: ${total}`);
+// console.log(`Average: ${total/scores.length}`)
