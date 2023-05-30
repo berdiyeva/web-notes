@@ -29,11 +29,59 @@
 //     }
 // }
 
-let seatingChart = [['Kristen', 'Erik', 'Namita'], ['Kevin', 'Joe', 'Jane', 'Olivia'], ['Yuma', 'Sakura', 'Jack', 'Steven']]
-for (let i = 0; i < seatingChart.length; i++) {
-    let row = seatingChart[i];
-    console.log(`Row ${i+1} ${row}`)
+// let seatingChart = [['Kristen', 'Erik', 'Namita'], ['Kevin', 'Joe', 'Jane', 'Olivia'], ['Yuma', 'Sakura', 'Jack', 'Steven']]
+// for (let i = 0; i < seatingChart.length; i++) {
+//     let row = seatingChart[i];
+//     console.log(`Row ${i+1} ${row}`)
     // for (let j = 0; j < row.length; j++) {
     //     console.log(row[j])
     // }
+// }
+
+// const secret = "BabyHippo";
+// let guess = prompt("enter the secret code...");
+// while (guess !== secret) {
+//     guess = prompt("enter the secret code...");
+// }
+// console.log("Congrats you guessed the secret!")
+
+// let input = prompt("Hey say something!");
+// while (true) {
+//     input = prompt(input);
+//     if (input.toLocaleLowerCase() === "stop copying me") {
+//         break;
+//     }
+// }
+// console.log("Okay you win!")
+
+// for (let i = 0; i < 100; i++) {
+//     console.log(i);
+//     if (i === 10) break;
+// }
+
+//the simple guessing game 
+let maximum = parseInt(prompt("Enter the maximum number!"));
+while (!maximum) {
+    maximum = parseInt(prompt("Enter a valid number!"));
+}
+
+const randomNum = Math.floor(Math.random() * maximum) + 1;
+console.log(randomNum);
+
+let guess = parseInt(prompt("Enter your first guess!"));
+let attempts = 1;
+
+while (parseInt(guess) !== randomNum) {
+    attempts++;
+    if (guess === 'q') break;
+    if (guess > randomNum) {
+        guess = prompt("Too high! Enter a new guess!");
+    } else {
+        guess = prompt("Too low! Enter a new guess!");
+    }
+}
+if (guess === 'q') {
+    console.log("Ok, bye!")
+} else {
+    console.log(`Congrats! You win! It took you ${attempts} guesses`)
 }
