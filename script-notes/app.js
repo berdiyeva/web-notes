@@ -173,7 +173,7 @@
 // callTwice(rollDice)
 
 // Reduce method
-// const prices = [23, 5, 2, 7, 5]
+const prices = [23, 5, 2, 7, 5]
 
 // let total = 0;
 // for (let price of prices) {
@@ -184,4 +184,6 @@
 // const total = prices.reduce((total, price) => {
 //     return total + price
 // })
-// console.log(`Total is ${total}`);
+
+const total = prices.reduce((total, price) => total + price)
+console.log(`Total is ${total}`);
