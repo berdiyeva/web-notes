@@ -160,14 +160,28 @@
 // }
 
 // Higher Oreder Functions notes
-function callTwice(func) {
-    func();
-    func();
-}
+// function callTwice(func) {
+//     func();
+//     func();
+// }
 
-function rollDice() {
-    const roll = Math.floor(Math.random() * 6) + 1
-    console.log(roll)
-}
+// function rollDice() {
+//     const roll = Math.floor(Math.random() * 6) + 1
+//     console.log(roll)
+// }
 
-callTwice(rollDice)
+// callTwice(rollDice)
+
+// Reduce method
+// const prices = [23, 5, 2, 7, 5]
+
+// let total = 0;
+// for (let price of prices) {
+//     total += price
+// }
+// console.log(`Total is ${total}`);
+
+// const total = prices.reduce((total, price) => {
+//     return total + price
+// })
+// console.log(`Total is ${total}`);
