@@ -173,7 +173,7 @@
 // callTwice(rollDice)
 
 // Reduce method
-const prices = [23, 5, 2, 7, 5]
+// const prices = [23, 5, 2, 7, 5]
 
 // let total = 0;
 // for (let price of prices) {
@@ -185,5 +185,19 @@ const prices = [23, 5, 2, 7, 5]
 //     return total + price
 // })
 
-const total = prices.reduce((total, price) => total + price)
-console.log(`Total is ${total}`);
+// const total = prices.reduce((total, price) => total + price)
+// console.log(`Total is ${total}`);
+
+//Return the min price
+// const minPrice = prices.reduce((min, price) => {
+//     if (price < min) {
+//         return price;
+//     }
+//     return min;
+// })
+// console.log(`Min price is ${minPrice}`)
+
+//Second value - initial value to the accumulator
+// const evens = [2, 4, 6, 8, 10]
+// console.log(evens.reduce((sum, num) => sum + num))
+// console.log(evens.reduce((sum, num) => sum + num, 100))
