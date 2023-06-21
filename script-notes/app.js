@@ -201,3 +201,13 @@
 // const evens = [2, 4, 6, 8, 10]
 // console.log(evens.reduce((sum, num) => sum + num))
 // console.log(evens.reduce((sum, num) => sum + num, 100))
+
+//Spread Operator 
+// Spread for function calls -> expands an iterable (array, string, etc.) into a list of arguments
+// Example, Math.max() expects the list of arguments (array itself) and won't recognize the passed name of the array. 
+const nums = [12, 15, 28, 0, 3, 7]
+// console.log(Math.max(12, 15, 28, 0, 3, 7)) -> 28
+// console.log(Math.max(nums)) -> NaN
+console.log(Math.max(...nums))
+console.log(...nums)
+// console.log(..."hello") same as console.log("h", "e", "l", "l", "0")
